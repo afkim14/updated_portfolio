@@ -22,6 +22,7 @@
     width: 60%;
     margin: 0px auto;
     padding-top: 30px;
+    padding-bottom: 50px;
     display: block;
 
     animation: enter-upwards 0.7s ease forwards;
@@ -94,8 +95,11 @@
 
 .project-page-keyword {
     padding: 2px;
+    padding-left: 8px;
+    padding-right: 8px;
     display: inline-block;
     margin: 0px;
+    margin-top: 4px;
 }
 
 .project-page-keyword-link {
@@ -112,6 +116,31 @@
 
 .project-page-info-float {
     animation: move-info-up-down 1.5s linear infinite;
+}
+
+.project-page-project-container {
+    width: 100%;
+    margin-top: 500px;
+    margin-bottom: 500px;
+}
+
+.project-page-project-text {
+    display: block;
+    position: relative;
+    line-height: 25px;
+}
+
+.project-page-project-img {
+    margin-top: 30px;
+    width: 100%;
+}
+
+.project-page-main-message {
+    margin-top: 500px;
+    margin-bottom: 500px;
+    display: block;
+    position: relative;
+    line-height: 30px;
 }
 
 @keyframes enter-upwards {

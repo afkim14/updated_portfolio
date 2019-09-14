@@ -4,15 +4,23 @@
     outline: none;
     border: none;
     font-size: 15px;
-    cursor: pointer;
+}
 
+.custom-button-active {
+    cursor: pointer;
     -webkit-transition: background-color 0.1s ease;
     -moz-transition: background-color 0.1s ease;
     transition: background-color 0.1s ease;
 }
 
-.custom-button:hover {
+.custom-button-active:hover {
     animation: up-down 2s infinite;
+}
+
+.custom-button-inactive {
+    cursor: default;
+    transition: none;
+    animation: none;
 }
 
 @keyframes up-down {

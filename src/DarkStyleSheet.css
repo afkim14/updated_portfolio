@@ -39,7 +39,7 @@ span {
     border-color: #232130;
 }
 
-.default-button-color:hover {
+.default-button-color-active:hover {
     color: #232130;
     background: #388d7d;
     border-color: #388d7d;
@@ -49,12 +49,16 @@ span {
     box-shadow: -30px -30px 0px -20px #232130, 10px -30px 0px -20px #232130;
 }
 
+.default-light-background {
+    background-color: #388d7d;
+}
+
 .default-dark-background {
     background-color: #232130;
 }
 
 .default-back-background {
-    background-color: #232130;
+    background-color: #302c3f;
 }
 
 .default-back-background:hover {
@@ -62,7 +66,7 @@ span {
 }
 
 .default-back-background:hover p {
-    color: #232130;
+    color: #302c3f;
 }
 
 .default-keyword {

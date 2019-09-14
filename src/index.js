@@ -5,8 +5,14 @@ import { ImageColor, Solver } from './ImageColor';
 import './index.css';
 import { hexToRgb } from './Helpers';
 import MainHome from './components/MainHome';
+import ProjectPage from './components/ProjectPage';
 import Deeplocal from './components/Deeplocal';
 import Monaco from './components/Monaco';
+import Taggle from './components/Taggle';
+import Capsule from './components/Capsule';
+import AtomicHabits from './components/AtomicHabits';
+import NuHub from './components/NuHub';
+import DailyUi from './components/DailyUi';
 import NotFoundPage from './components/NotFoundPage';
 import * as serviceWorker from './serviceWorker';
 
@@ -31,8 +37,13 @@ const imageHoverResult = imageHoverSolver.solve();
 
 const routes = {
     '/': () => <MainHome imageColorFilter={imageResult.filter} imageColorHoverFilter={imageHoverResult.filter} />,
-    '/deeplocal': () => <Deeplocal />,
-    '/monaco': () => <Monaco />,
+    '/deeplocal': () => <ProjectPage content={Deeplocal} />,
+    '/monaco': () => <ProjectPage content={Monaco} />,
+    '/taggle': () => <ProjectPage content={Taggle} />,
+    '/capsule': () => <ProjectPage content={Capsule} />,
+    '/atomichabits': () => <ProjectPage content={AtomicHabits} imageColorHoverFilter={imageHoverResult.filter} />,
+    '/nuhub': () => <ProjectPage content={NuHub} />,
+    '/dailyui': () => <ProjectPage content={DailyUi} />,
 };
 
 function App() {

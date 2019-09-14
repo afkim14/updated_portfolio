@@ -1,22 +1,22 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import './MainHome.css';
-import profileImage from '../assets/andres-01.png';
+import profileImage from '../assets/icons/andres-01.png';
 import ProjectContainer from './ProjectContainer';
 import CustomButton from './CustomButton';
 import { Messages } from '../Messages';
 import { openLink } from '../Helpers';
 import { navigate } from 'hookrouter';
 
-import deeplocalImg from '../assets/deeplocal-01.png';
-import monacoImg from '../assets/monaco-01.png';
-import taggleImg from '../assets/taggle-01.png';
-import capsuleImg from '../assets/capsule-01.png';
-import atomicHabitsImg from '../assets/atomicHabits-01.png';
-import nuHubImg from '../assets/nuhub-01.png';
-import dailyUiImg from '../assets/dailyui-01.png';
-import mediumImg from '../assets/medium-01.png';
-import d3Img from '../assets/d3-01.png';
+import deeplocalImg from '../assets/icons/deeplocal-01.png';
+import monacoImg from '../assets/icons/monaco-01.png';
+import taggleImg from '../assets/icons/taggle-01.png';
+import capsuleImg from '../assets/icons/capsule-01.png';
+import atomicHabitsImg from '../assets/icons/atomicHabits-01.png';
+import nuHubImg from '../assets/icons/nuhub-01.png';
+import dailyUiImg from '../assets/icons/dailyui-01.png';
+import mediumImg from '../assets/icons/medium-01.png';
+import d3Img from '../assets/icons/d3-01.png';
 
 export default class MainHome extends React.Component {
     constructor(props) {
@@ -123,7 +123,9 @@ export default class MainHome extends React.Component {
                                 this.changeHoverMessage(Messages.TAGGLE);
                             }}
                             onHeaderLeave={() => {}}
-                            onHeaderClick={() => {}}
+                            onHeaderClick={() => {
+                                this.animateThenGoTo('/taggle');
+                            }}
                         />
                     </div>
                 </div>
@@ -151,7 +153,7 @@ export default class MainHome extends React.Component {
                             }}
                             onHeaderLeave={() => {}}
                             onHeaderClick={() => {
-                                openLink('https://projectcapsule.me/');
+                                this.animateThenGoTo('/capsule');
                             }}
                         />
                         <ProjectContainer
@@ -166,14 +168,14 @@ export default class MainHome extends React.Component {
                             }}
                             onHeaderLeave={() => {}}
                             onHeaderClick={() => {
-                                openLink('https://projectcapsule.me/');
+                                this.animateThenGoTo('/atomichabits');
                             }}
                         />
                         <ProjectContainer
                             img={nuHubImg}
                             imgStyle={{ filter: this.props.imageColorFilter }}
                             imgHoverStyle={{ filter: this.props.imageColorHoverFilter }}
-                            description={'React Native'}
+                            description={'Adobe Illustrator, React Native'}
                             header={'NU HUB'}
                             onHeaderHover={() => {
                                 this.setState({ developedHover: true, currentlyAtHover: false });
@@ -181,7 +183,7 @@ export default class MainHome extends React.Component {
                             }}
                             onHeaderLeave={() => {}}
                             onHeaderClick={() => {
-                                openLink('https://projectcapsule.me/');
+                                this.animateThenGoTo('/nuhub');
                             }}
                         />
                         <ProjectContainer
@@ -196,7 +198,7 @@ export default class MainHome extends React.Component {
                             }}
                             onHeaderLeave={() => {}}
                             onHeaderClick={() => {
-                                openLink('https://projectcapsule.me/');
+                                this.animateThenGoTo('/dailyui');
                             }}
                         />
                     </div>
@@ -253,7 +255,7 @@ export default class MainHome extends React.Component {
                             }}
                             onHeaderLeave={() => {}}
                             onHeaderClick={() => {
-                                openLink('https://blog.prototypr.io/capsule-send-meaningful-messages-4126d53560d8');
+                                openLink('https://packetlossvis.firebaseapp.com/');
                             }}
                         />
                     </div>

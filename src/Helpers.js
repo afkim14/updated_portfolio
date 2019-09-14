@@ -1,3 +1,5 @@
+export const leaveProjectAnimationDuration = 300;
+
 export function hexToRgb(hex) {
     // Expand shorthand form (e.g. "03F") to full form (e.g. "0033FF")
     const shorthandRegex = /^#?([a-f\d])([a-f\d])([a-f\d])$/i;

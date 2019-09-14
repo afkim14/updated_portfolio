@@ -1,0 +1,102 @@
+.side-bar-container {
+    position: fixed;
+    top: 110px;
+    left: 10%;
+    transform: translateX(-500px);
+
+    animation: enter-left 0.7s ease forwards;
+    animation-delay: 1s;
+}
+
+.side-bar-current-container {
+    position: absolute;
+    top: 0px; /* change this to move thing up and down */
+    transition: all 1s ease 0s;
+}
+
+.side-bar-header {
+    position: absolute;
+    right: 30px;
+    top: -19px;
+    text-align: right;
+    width: 100px;
+}
+
+.side-bar-top-container-hidden {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    cursor: default;
+}
+
+.side-bar-top-container {
+    opacity: 1;
+    transition: opacity 1s 0.3s ease;
+    cursor: pointer;
+}
+
+.side-bar-top-header {
+    position: absolute;
+    right: 30px;
+    top: -19px;
+    text-align: right;
+    width: 100px;
+
+    opacity: 0.5;
+}
+
+.side-bar-top-circle {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    top: 0px;
+    position: absolute;
+}
+
+.side-bar-top-circle:hover {
+    animation: pulsate 2s linear infinite;
+}
+
+.side-bar-circle {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+}
+
+.side-bar-bar {
+    height: 60vh;
+    width: 3px;
+    margin-left: 5.5px;
+    opacity: 0.5;
+}
+
+@keyframes enter-left {
+    0% {
+        transform: translateX(-500px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+@keyframes pulsate {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.3);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    .side-bar-header {
+        display: none;
+        visibility: hidden;
+    }
+
+    .side-bar-bar {
+        margin-left: 6px;
+    }
+}
