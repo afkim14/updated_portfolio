@@ -1,0 +1,184 @@
+.project-page-back-container {
+    height: 50px;
+    width: 100%;
+    text-align: center;
+    margin-top: -16px;
+    cursor: pointer;
+
+    transform: translateY(-50px);
+    animation: enter-down 0.5s ease forwards;
+    animation-delay: 1.3s;
+}
+
+.project-page-back-animation {
+    animation: leave-fade 0.3s linear forwards;
+}
+
+.project-page-back-text {
+    padding-top: 13px;
+}
+
+.project-page-container {
+    width: 60%;
+    margin: 0px auto;
+    padding-top: 30px;
+    display: block;
+
+    animation: enter-upwards 0.7s ease forwards;
+}
+
+.project-page-top-container {
+    height: 100vh;
+}
+
+.project-page-title-container {
+    opacity: 0.5;
+    animation: fade-in-half 0.3s linear forwards;
+    animation-delay: 1s;
+}
+
+.project-page-header {
+    font-weight: bold;
+    font-size: 60px;
+    margin: 0px;
+}
+
+.project-page-role {
+    margin: 0px;
+}
+
+.project-page-website-btn {
+    width: 180px;
+    height: 40px;
+    margin-top: 20px;
+}
+
+.project-page-keypoints-container {
+    opacity: 0;
+    animation: fade-in 0.2s linear forwards;
+    animation-delay: 1.3s;
+}
+
+.project-page-subheader {
+    font-size: 25px;
+    font-weight: bold;
+    margin: 0px;
+    margin-top: 70px;
+    margin-bottom: 20px;
+}
+
+.project-page-keypoints-ul {
+    font-size: 18px;
+    margin: 0px;
+    padding: 0px;
+    margin-left: 20px;
+    margin-bottom: 50px;
+}
+
+.project-page-keypoints-li {
+    padding-left: 10px;
+    padding-top: 10px;
+    margin-bottom: 5px;
+}
+
+.project-page-rest-container {
+    opacity: 0;
+    animation: fade-in 0.2s linear forwards;
+    animation-delay: 1.5s;
+}
+
+.project-page-divider {
+    height: 5px;
+    width: 100%;
+}
+
+.project-page-keyword {
+    padding: 2px;
+    display: inline-block;
+    margin: 0px;
+}
+
+.project-page-keyword-link {
+    cursor: pointer;
+}
+
+.project-page-keyword-link:hover {
+    animation: move-button-up-down 1s linear infinite;
+}
+
+.project-page-main-info {
+    padding-top: 20px;
+}
+
+.project-page-info-float {
+    animation: move-info-up-down 1.5s linear infinite;
+}
+
+@keyframes enter-upwards {
+    0% {
+        transform: translateY(500px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+@keyframes enter-down {
+    0% {
+        transform: translateY(-50px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+@keyframes leave-fade {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fade-in-half {
+    0% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes move-button-up-down {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-2px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+@keyframes move-info-up-down {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-4px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}

@@ -1,0 +1,65 @@
+.project-container {
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+
+.project-info-container {
+    width: 75%;
+    float: left;
+    margin-right: 10px;
+}
+
+.project-header {
+    font-weight: 800;
+    font-size: 21px;
+    margin: 0px;
+    cursor: pointer;
+    display: inline-block;
+
+    transition: color 0.1s linear;
+    -webkit-transition: color 0.1s linear;
+}
+
+.project-description {
+    margin: 0px;
+    font-size: 13px;
+    transition: border-color 0.1s linear;
+    -webkit-transition: border-color 0.1s linear;
+}
+
+.project-image {
+    float: left;
+    width: 11%;
+    position: relative;
+    top: 6px;
+    margin-left: 15px;
+    margin-right: 10px;
+}
+
+@media only screen and (max-width: 1210px) {
+    .project-info-container {
+        width: 80%;
+    }
+
+    .project-header {
+        font-size: 24px;
+        margin-top: 3px;
+    }
+
+    .project-image {
+        width: 9%;
+        margin-left: 25px;
+    }
+}
+
+@media only screen and (max-width: 1160px) {
+    .project-image {
+        width: 50px;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .project-info-container {
+        width: 65%;
+    }
+}

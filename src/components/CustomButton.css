@@ -1,0 +1,28 @@
+.custom-button {
+    width: 110px;
+    height: 60px;
+    outline: none;
+    border: none;
+    font-size: 15px;
+    cursor: pointer;
+
+    -webkit-transition: background-color 0.1s ease;
+    -moz-transition: background-color 0.1s ease;
+    transition: background-color 0.1s ease;
+}
+
+.custom-button:hover {
+    animation: up-down 2s infinite;
+}
+
+@keyframes up-down {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-5px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
