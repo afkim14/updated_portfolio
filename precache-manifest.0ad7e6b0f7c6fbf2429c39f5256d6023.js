@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "9fd9f1565827491d0d973637df788d61",
+    "revision": "2138f5bac964777d6df147c7539c2d2c",
     "url": "/andresfernandokim/index.html"
   },
   {
@@ -12,12 +12,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/andresfernandokim/static/css/4.56ed6ca1.chunk.css"
   },
   {
-    "revision": "6ffba994db57f8408628",
+    "revision": "4dc71591fa1a98930e05",
     "url": "/andresfernandokim/static/css/main.9bde6e33.chunk.css"
   },
   {
-    "revision": "7aa730fb7979f5f19d99",
-    "url": "/andresfernandokim/static/js/2.cbb40655.chunk.js"
+    "revision": "eb05d8b03585f788fb00",
+    "url": "/andresfernandokim/static/js/2.79f42e5c.chunk.js"
   },
   {
     "revision": "de4a68aa17b27950139a",
@@ -28,8 +28,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/andresfernandokim/static/js/4.3720968a.chunk.js"
   },
   {
-    "revision": "6ffba994db57f8408628",
-    "url": "/andresfernandokim/static/js/main.91e4cc74.chunk.js"
+    "revision": "4dc71591fa1a98930e05",
+    "url": "/andresfernandokim/static/js/main.3dcb4068.chunk.js"
   },
   {
     "revision": "879d11220f96e50ff741",
