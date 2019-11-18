@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/andresfernandokim/static/css/main.6e796e97.chunk.css",
-    "main.js": "/andresfernandokim/static/js/main.e05ebb7c.chunk.js",
-    "main.js.map": "/andresfernandokim/static/js/main.e05ebb7c.chunk.js.map",
+    "main.js": "/andresfernandokim/static/js/main.81498b31.chunk.js",
+    "main.js.map": "/andresfernandokim/static/js/main.81498b31.chunk.js.map",
     "runtime~main.js": "/andresfernandokim/static/js/runtime~main.8cbb536b.js",
     "runtime~main.js.map": "/andresfernandokim/static/js/runtime~main.8cbb536b.js.map",
     "static/js/2.3ebbd8e6.chunk.js": "/andresfernandokim/static/js/2.3ebbd8e6.chunk.js",
@@ -14,7 +14,7 @@
     "static/js/4.5ed29b6e.chunk.js": "/andresfernandokim/static/js/4.5ed29b6e.chunk.js",
     "static/js/4.5ed29b6e.chunk.js.map": "/andresfernandokim/static/js/4.5ed29b6e.chunk.js.map",
     "index.html": "/andresfernandokim/index.html",
-    "precache-manifest.9ff80e8968ba0fc7a0c5bbb4330e0512.js": "/andresfernandokim/precache-manifest.9ff80e8968ba0fc7a0c5bbb4330e0512.js",
+    "precache-manifest.397a212f851c43f43d2f7ebbee8324d2.js": "/andresfernandokim/precache-manifest.397a212f851c43f43d2f7ebbee8324d2.js",
     "service-worker.js": "/andresfernandokim/service-worker.js",
     "static/css/3.82712489.chunk.css.map": "/andresfernandokim/static/css/3.82712489.chunk.css.map",
     "static/css/4.6fc6e699.chunk.css.map": "/andresfernandokim/static/css/4.6fc6e699.chunk.css.map",
