@@ -1,39 +1,39 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "2138f5bac964777d6df147c7539c2d2c",
+    "revision": "40b8c8d14d21a3e42d69ae9a02c3b534",
     "url": "/andresfernandokim/index.html"
   },
   {
-    "revision": "de4a68aa17b27950139a",
-    "url": "/andresfernandokim/static/css/3.b0c7fb6d.chunk.css"
+    "revision": "cdcdbd55993fcc7e650d",
+    "url": "/andresfernandokim/static/css/3.82712489.chunk.css"
   },
   {
-    "revision": "05f38deb772dbff191f3",
-    "url": "/andresfernandokim/static/css/4.56ed6ca1.chunk.css"
+    "revision": "5fd13ad32da7ccb34f86",
+    "url": "/andresfernandokim/static/css/4.6fc6e699.chunk.css"
   },
   {
-    "revision": "4dc71591fa1a98930e05",
-    "url": "/andresfernandokim/static/css/main.9bde6e33.chunk.css"
+    "revision": "501108e744786492e577",
+    "url": "/andresfernandokim/static/css/main.6e796e97.chunk.css"
   },
   {
-    "revision": "eb05d8b03585f788fb00",
-    "url": "/andresfernandokim/static/js/2.79f42e5c.chunk.js"
+    "revision": "faece1e548ec07fcabb6",
+    "url": "/andresfernandokim/static/js/2.dfb329f9.chunk.js"
   },
   {
-    "revision": "de4a68aa17b27950139a",
-    "url": "/andresfernandokim/static/js/3.ef4758ee.chunk.js"
+    "revision": "cdcdbd55993fcc7e650d",
+    "url": "/andresfernandokim/static/js/3.f4bc7a2b.chunk.js"
   },
   {
-    "revision": "05f38deb772dbff191f3",
-    "url": "/andresfernandokim/static/js/4.3720968a.chunk.js"
+    "revision": "5fd13ad32da7ccb34f86",
+    "url": "/andresfernandokim/static/js/4.91e1ca9d.chunk.js"
   },
   {
-    "revision": "4dc71591fa1a98930e05",
-    "url": "/andresfernandokim/static/js/main.3dcb4068.chunk.js"
+    "revision": "501108e744786492e577",
+    "url": "/andresfernandokim/static/js/main.878fa618.chunk.js"
   },
   {
-    "revision": "879d11220f96e50ff741",
-    "url": "/andresfernandokim/static/js/runtime~main.3ca600a3.js"
+    "revision": "9a2fce46bf0951078eeb",
+    "url": "/andresfernandokim/static/js/runtime~main.ba3f3a63.js"
   },
   {
     "revision": "d8fb030873aebfd6286f3bd921f91a12",
@@ -118,6 +118,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "5f6f951fff3be2edfe0aa7a92642079c",
     "url": "/andresfernandokim/static/media/connectivity.5f6f951f.jpg"
+  },
+  {
+    "revision": "872a5a8f0cd6316926421f240c0e0af3",
+    "url": "/andresfernandokim/static/media/deeplocal-clients-01.872a5a8f.png"
   },
   {
     "revision": "747aa20ae21ce15b04423d10d7a3d6c9",
