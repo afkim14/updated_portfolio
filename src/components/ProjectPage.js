@@ -2,7 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import SideBar from './SideBar';
 import { leaveProjectAnimationDuration } from '../Helpers';
-import { navigate } from 'hookrouter';
 import { animateScroll as scroll } from 'react-scroll';
 import './ProjectPage.css';
 
@@ -36,7 +35,7 @@ export default class ProjectPage extends React.Component {
     animateThenGoTo(link) {
         this.setState({ goBackClicked: true });
         setTimeout(() => {
-            navigate(link);
+            this.props.history.push(link);
         }, leaveProjectAnimationDuration);
     }
 

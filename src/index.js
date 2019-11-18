@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { useRoutes } from 'hookrouter';
+import { HashRouter, Route } from 'react-router-dom';
 import './index.css';
 import { hexToRgb } from './Helpers';
 import MainHome from './components/MainHome';
@@ -43,35 +43,34 @@ const imageColorHover = new ImageColor(imgHoverRGB[0], imgHoverRGB[1], imgHoverR
 const imageHoverSolver = new Solver(imageColorHover);
 const imageHoverResult = imageHoverSolver.solve();
 
-const routes = {
-    '/': () => <IntroPage />,
-    '/skip': () => <IntroPage skipIntro={true} />,
-    '/work': () => <WorkPage />,
-    '/work/skip': () => <WorkPage skipIntro={true}  />,
-    '/sidework': () => <SideWorkPage imageColorFilter={imageResult.filter} imageColorHoverFilter={imageHoverResult.filter} />,
-    '/sidework/skip': () => <SideWorkPage imageColorFilter={imageResult.filter} imageColorHoverFilter={imageHoverResult.filter} skipIntro={true}  />,
-    '/about': () => <About imageColorFilter={imageResult.filter} imageColorHoverFilter={imageHoverResult.filter}  />,
-    '/about/skip': () => <About imageColorFilter={imageResult.filter} imageColorHoverFilter={imageHoverResult.filter} skipIntro={true}  />,
-    '/conclusion': () => <Conclusion />,
+const App = () => (
+    <HashRouter basename={process.env.PUBLIC_URL}>
+        <div>
+            <Route exact path="/" render={(props) => <IntroPage {...props} />}/>
+            <Route exact path="/skip" render={(props) => <IntroPage {...props} skipIntro={true} />} />
+            <Route exact path="/work" render={(props) => <WorkPage {...props} />} />
+            <Route exact path="/work/skip" render={(props) => <WorkPage {...props} skipIntro={true}  />} />
+            <Route exact path="/sidework" render={(props) => <SideWorkPage {...props} imageColorFilter={imageResult.filter} imageColorHoverFilter={imageHoverResult.filter} />} />
+            <Route exact path="/sidework/skip" render={(props) => <SideWorkPage {...props} imageColorFilter={imageResult.filter} imageColorHoverFilter={imageHoverResult.filter} skipIntro={true} />} />
+            <Route exact path="/about" render={(props) => <About {...props} imageColorFilter={imageResult.filter} imageColorHoverFilter={imageHoverResult.filter} skipIntro={true} />} />
+            <Route exact path="/about/skip" render={(props) => <About {...props} imageColorFilter={imageResult.filter} imageColorHoverFilter={imageHoverResult.filter} skipIntro={true} />} />
+            <Route exact path="/conclusion" render={(props) => <Conclusion {...props} />} />
 
-    '/static': () => <MainHome imageColorFilter={imageResult.filter} imageColorHoverFilter={imageHoverResult.filter} />,
-    '/deeplocal': () => <ProjectPage content={Deeplocal} backURL={'/static'} />,
-    '/deeplocal/work': () => <ProjectPage content={Deeplocal} backURL={'/work/skip'} />,
-    '/monaco': () => <ProjectPage content={Monaco} backURL={'/static'} />,
-    '/monaco/about': () => <ProjectPage content={Monaco} backURL={'/about/skip'} />,
-    '/taggle': () => <ProjectPage content={Taggle} backURL={'/static'} />,
-    '/capsule': () => <ProjectPage content={Capsule} backURL={'/static'} />,
-    '/capsule/sidework': () => <ProjectPage content={Capsule} backURL={'/sidework/skip'} />,
-    '/atomichabits': () => <ProjectPage content={AtomicHabits} imageColorHoverFilter={imageHoverResult.filter} backURL={'/static'} />,
-    '/nuhub': () => <ProjectPage content={NuHub} backURL={'/static'} />,
-    '/dailyui': () => <ProjectPage content={DailyUi} backURL={'/static'} />,
-    '/dailyui/about': () => <ProjectPage content={DailyUi} backURL={'/about/skip'} />,
-};
-
-function App() {
-    const routeResult = useRoutes(routes) || <NotFoundPage />;
-    return routeResult;
-}
+            <Route exact path="/static" render={(props) => <MainHome {...props} imageColorFilter={imageResult.filter} imageColorHoverFilter={imageHoverResult.filter} />} />
+            <Route exact path="/deeplocal" render={(props) => <ProjectPage {...props} content={Deeplocal} backURL={'/static'} />} />
+            <Route exact path="/deeplocal/work" render={(props) => <ProjectPage {...props} content={Deeplocal} backURL={'/work/skip'} />} />
+            <Route exact path="/monaco" render={(props) => <ProjectPage {...props} content={Monaco} backURL={'/static'} />} />
+            <Route exact path="/monaco/about" render={(props) => <ProjectPage {...props} content={Monaco} backURL={'/about/skip'} />} />
+            <Route exact path="/taggle" render={(props) => <ProjectPage {...props} content={Taggle} backURL={'/static'} />} />
+            <Route exact path="/capsule" render={(props) => <ProjectPage {...props} content={Capsule} backURL={'/static'} />} />
+            <Route exact path="/capsule/sidework" render={(props) => <ProjectPage {...props} content={Capsule} backURL={'/sidework/skip'} />} />
+            <Route exact path="/atomichabits" render={(props) => <ProjectPage {...props} content={AtomicHabits} imageColorHoverFilter={imageHoverResult.filter} backURL={'/static'} />} />
+            <Route exact path="/nuhub" render={(props) => <ProjectPage {...props} content={NuHub} backURL={'/static'} />} />
+            <Route exact path="/dailyui" render={(props) => <ProjectPage {...props} content={DailyUi} backURL={'/static'} />} />
+            <Route exact path="/dailyui/about" render={(props) => <ProjectPage {...props} content={DailyUi} backURL={'/about/skip'} />} />
+        </div>
+    </HashRouter>
+  )
 
 ReactDOM.render(<App />, document.getElementById('root'));
 

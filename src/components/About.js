@@ -4,11 +4,6 @@ import './About.css';
 import { openLink } from '../Helpers';
 import CustomButton from './CustomButton';
 import ProjectContainer from './ProjectContainer';
-import { navigate } from 'hookrouter';
-
-import monacoImg from '../assets/icons/monaco-01.png';
-import mediumImg from '../assets/icons/medium-01.png';
-import dailyUiImg from '../assets/icons/dailyui-01.png';
 
 const ANIMATION_STATES = {
     INTRO: 'INTRO',
@@ -44,7 +39,7 @@ export default class About extends React.Component {
     animateThenGoTo(link) {
         this.setState({ projectClicked: true });
         setTimeout(() => {
-            navigate(link);
+            this.props.history.push(link);
         }, 800);
     }
 
@@ -59,7 +54,7 @@ export default class About extends React.Component {
                     <p className="about-page-disclaimer">Pursuing my goal to not only be a strong developer but also a universal person.</p>
                     <div className="about-projects-container default-border default-border-color">
                         <ProjectContainer
-                            img={monacoImg}
+                            img={'/assets/icons/monaco-01.png'}
                             imgStyle={{ filter: this.props.imageColorFilter, width: '6%' }}
                             imgHoverStyle={{ filter: this.props.imageColorHoverFilter, width: '6%' }}
                             description={'Exhibition on the idea of virtual connectivity.'}
@@ -73,7 +68,7 @@ export default class About extends React.Component {
                             descClassName={'about-project-desc'}
                         />
                         <ProjectContainer
-                            img={dailyUiImg}
+                            img={'/assets/icons/dailyui-01.png'}
                             imgStyle={{ filter: this.props.imageColorFilter, width: '6%' }}
                             imgHoverStyle={{ filter: this.props.imageColorHoverFilter, width: '6%' }}
                             description={'UI designs for the dailyui.co 100-day challenge.'}
@@ -81,13 +76,13 @@ export default class About extends React.Component {
                             onHeaderHover={() => {}}
                             onHeaderLeave={() => {}}
                             onHeaderClick={() => {
-                                navigate('/dailyui/about')
+                                this.props.history.push('/dailyui/about');
                             }}
                             titleClassName={'about-project-title'}
                             descClassName={'about-project-desc'}
                         />
                         <ProjectContainer
-                            img={mediumImg}
+                            img={'/assets/icons/medium-01.png'}
                             imgStyle={{ filter: this.props.imageColorFilter, width: '6%' }}
                             imgHoverStyle={{ filter: this.props.imageColorHoverFilter, width: '6%' }}
                             description={'Lack of information leads to distrust, uncertainty, and lazy user interaction.'}
@@ -107,7 +102,7 @@ export default class About extends React.Component {
                                 className={'about-page-go-back-btn'}
                                 text={'Go back'}
                                 onClick={() => {
-                                    navigate('/sidework/skip')
+                                    this.props.history.push('/sidework/skip');
                                 }}
                             />
                             <CustomButton
@@ -115,7 +110,7 @@ export default class About extends React.Component {
                                 text={'Continue'}
                                 inverted={true}
                                 onClick={() => {
-                                    navigate('/conclusion');
+                                    this.props.history.push('/conclusion');
                                 }}
                             />
                         </div>

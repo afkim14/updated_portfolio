@@ -2,8 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import './WorkPage.css';
 import CustomButton from './CustomButton';
-import { navigate } from 'hookrouter';
-import clientImg from '../assets/deeplocal-clients-01.png';
 
 const ANIMATION_STATES = {
     INTRO: 'INTRO',
@@ -39,7 +37,7 @@ export default class WorkPage extends React.Component {
     animateThenGoTo(link) {
         this.setState({ projectClicked: true });
         setTimeout(() => {
-            navigate(link);
+            this.props.history.push(link);
         }, 800);
     }
 
@@ -66,7 +64,7 @@ export default class WorkPage extends React.Component {
                     <div className="work-page-clients-container">
                         <p className="work-page-header default-accent-color">Selected Clients</p>
                         <p className="work-page-disclaimer">I have worked on Google and Equinox projects, but cannot disclose more as of now due to privacy concerns.</p>
-                        <img className="work-page-client-img" src={clientImg} />
+                        <img className="work-page-client-img" src={'/assets/deeplocal-clients-01.png'} />
                     </div>
                     {this.state.buttonsActive ? (
                         <div className="work-page-buttons-container">
@@ -74,7 +72,7 @@ export default class WorkPage extends React.Component {
                                 className={'work-page-go-back-btn'}
                                 text={'Go back'}
                                 onClick={() => {
-                                    navigate('/skip')
+                                    this.props.history.push('/skip');
                                 }}
                             />
                             <CustomButton
@@ -82,7 +80,7 @@ export default class WorkPage extends React.Component {
                                 text={'Continue'}
                                 inverted={true}
                                 onClick={() => {
-                                    navigate('/sidework');
+                                    this.props.history.push('/sidework');
                                 }}
                             />
                         </div>

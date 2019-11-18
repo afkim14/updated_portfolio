@@ -1,22 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import './MainHome.css';
-import profileImage from '../assets/icons/andres-01.png';
 import ProjectContainer from './ProjectContainer';
 import CustomButton from './CustomButton';
 import { Messages } from '../Messages';
 import { openLink } from '../Helpers';
-import { navigate } from 'hookrouter';
-
-import deeplocalImg from '../assets/icons/deeplocal-01.png';
-import monacoImg from '../assets/icons/monaco-01.png';
-import taggleImg from '../assets/icons/taggle-01.png';
-import capsuleImg from '../assets/icons/capsule-01.png';
-import atomicHabitsImg from '../assets/icons/atomicHabits-01.png';
-import nuHubImg from '../assets/icons/nuhub-01.png';
-import dailyUiImg from '../assets/icons/dailyui-01.png';
-import mediumImg from '../assets/icons/medium-01.png';
-import d3Img from '../assets/icons/d3-01.png';
 
 export default class MainHome extends React.Component {
     constructor(props) {
@@ -36,7 +24,7 @@ export default class MainHome extends React.Component {
     animateThenGoTo(link) {
         this.setState({ projectClicked: true });
         setTimeout(() => {
-            navigate(link);
+            this.props.history.push(link);
         }, 800);
     }
 
@@ -55,7 +43,7 @@ export default class MainHome extends React.Component {
                     <div className="default-border default-border-color profile-image-container">
                         <img
                             className="profile-image"
-                            src={profileImage}
+                            src={'/assets/icons/andres-01.png'}
                             alt="Picture of Andres standing."
                             style={{ filter: this.props.imageColorHoverFilter }}
                         />
@@ -70,7 +58,7 @@ export default class MainHome extends React.Component {
                         ${this.state.currentlyAtHover && 'default-border-hovercolor'}`}
                     >
                         <ProjectContainer
-                            img={deeplocalImg}
+                            img={'/assets/icons/deeplocal-01.png'}
                             imgStyle={{ filter: this.props.imageColorFilter }}
                             imgHoverStyle={{ filter: this.props.imageColorHoverFilter }}
                             hovered={this.state.currentlyAtHover}
@@ -98,7 +86,7 @@ export default class MainHome extends React.Component {
                         }}
                     >
                         <ProjectContainer
-                            img={monacoImg}
+                            img={'/assets/icons/monaco-01.png'}
                             imgStyle={{ filter: this.props.imageColorFilter }}
                             imgHoverStyle={{ filter: this.props.imageColorHoverFilter }}
                             description={'Software Engineer Artist'}
@@ -113,7 +101,7 @@ export default class MainHome extends React.Component {
                             }}
                         />
                         <ProjectContainer
-                            img={taggleImg}
+                            img={'/assets/icons/taggle-01.png'}
                             imgStyle={{ filter: this.props.imageColorFilter }}
                             imgHoverStyle={{ filter: this.props.imageColorHoverFilter }}
                             description={'Software Engineer Intern'}
@@ -142,7 +130,7 @@ export default class MainHome extends React.Component {
                         }}
                     >
                         <ProjectContainer
-                            img={capsuleImg}
+                            img={'/assets/icons/capsule-01.png'}
                             imgStyle={{ filter: this.props.imageColorFilter }}
                             imgHoverStyle={{ filter: this.props.imageColorHoverFilter }}
                             description={'React, Firebase'}
@@ -157,7 +145,7 @@ export default class MainHome extends React.Component {
                             }}
                         />
                         <ProjectContainer
-                            img={atomicHabitsImg}
+                            img={'/assets/icons/atomicHabits-01.png'}
                             imgStyle={{ filter: this.props.imageColorFilter }}
                             imgHoverStyle={{ filter: this.props.imageColorHoverFilter }}
                             description={'React Native'}
@@ -173,7 +161,7 @@ export default class MainHome extends React.Component {
                         />
                         {/*
                         <ProjectContainer
-                            img={nuHubImg}
+                            img={'/assets/icons/nuhub-01.png'}
                             imgStyle={{ filter: this.props.imageColorFilter }}
                             imgHoverStyle={{ filter: this.props.imageColorHoverFilter }}
                             description={'Adobe Illustrator, React Native'}
@@ -189,7 +177,7 @@ export default class MainHome extends React.Component {
                         />
                         */}
                         <ProjectContainer
-                            img={dailyUiImg}
+                            img={'/assets/icons/dailyui-01.png'}
                             imgStyle={{ filter: this.props.imageColorFilter }}
                             imgHoverStyle={{ filter: this.props.imageColorHoverFilter }}
                             description={'Adobe Illustrator'}
@@ -216,7 +204,7 @@ export default class MainHome extends React.Component {
                         }}
                     >
                         <ProjectContainer
-                            img={mediumImg}
+                            img={'/assets/icons/medium-01.png'}
                             imgStyle={{ filter: this.props.imageColorFilter }}
                             imgHoverStyle={{ filter: this.props.imageColorHoverFilter }}
                             description={'medium.com'}
@@ -231,7 +219,7 @@ export default class MainHome extends React.Component {
                             }}
                         />
                         <ProjectContainer
-                            img={mediumImg}
+                            img={'/assets/icons/medium-01.png'}
                             imgStyle={{ filter: this.props.imageColorFilter }}
                             imgHoverStyle={{ filter: this.props.imageColorHoverFilter }}
                             description={'medium.com'}
@@ -247,7 +235,7 @@ export default class MainHome extends React.Component {
                         />
                         {/*
                         <ProjectContainer
-                            img={d3Img}
+                            img={'/assets/icons/d3-01.png'}
                             imgStyle={{ filter: this.props.imageColorFilter }}
                             imgHoverStyle={{ filter: this.props.imageColorHoverFilter }}
                             description={'d3.com'}

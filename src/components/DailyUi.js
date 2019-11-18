@@ -3,24 +3,6 @@ import PropTypes from 'prop-types';
 import ScrollTrigger from 'react-scroll-trigger';
 import { openLink } from '../Helpers';
 
-import dayOneImg from '../assets/dailyui/Day1_SignUp_Combined-01.png';
-import dayTwoImg from '../assets/dailyui/Day2_Payment_Combined-01.png';
-import dayThreeImg from '../assets/dailyui/Day3_LandingAlbum_Combined-01.png';
-import dayFourImg from '../assets/dailyui/Day4_Calculator_Combined-01.png';
-import dayFiveImg from '../assets/dailyui/Day5_Shuttle_Combined-01.png';
-import daySixImg from '../assets/dailyui/Day6_BusinessCard_Combined-01.png';
-import daySevenImg from '../assets/dailyui/Day7_Settings_Combined-01.png';
-import dayEightImg from '../assets/dailyui/Day8_404_Combined-01.png';
-import dayNineImg from '../assets/dailyui/Day9_Habits_Combined-01.png';
-import dayTenImg from '../assets/dailyui/Day10_Share_Combined-01.png';
-import dayElevenImg from '../assets/dailyui/Day11_SuccessFail_Combined-01.png';
-import dayTwelveImg from '../assets/dailyui/Day12_Shop_Combined-01.png';
-import dayThirteenImg from '../assets/dailyui/Day13_DirectMessaging_Combined-01.png';
-import dayFourteenImg from '../assets/dailyui/Day14_Countdown_Combined-01.png';
-import dayFifteenImg from '../assets/dailyui/Day15_Switch_Combined-01.png';
-import daySixteenImg from '../assets/dailyui/Day16_Popup_Combined-01.png';
-import daySeventeenImg from '../assets/dailyui/Day17_EmailReceipt_Combined-01.png';
-
 import CustomButton from './CustomButton';
 
 export default class DailyUi extends React.Component {
@@ -101,7 +83,7 @@ export default class DailyUi extends React.Component {
                             <p className="project-page-keyword default-keyword">clarity</p> and feedback cues when users
                             fill out sign up forms.
                         </span>
-                        <img className="project-page-project-img" src={dayOneImg} />
+                        <img className="project-page-project-img" src={'/assets/dailyui/Day1_SignUp_Combined-01.png'} />
                     </div>
                 </ScrollTrigger>
                 <ScrollTrigger
@@ -116,7 +98,7 @@ export default class DailyUi extends React.Component {
                             <p className="project-page-keyword default-keyword">ease-of-use</p> and security features
                             when users make online purchases.
                         </span>
-                        <img className="project-page-project-img" src={dayTwoImg} />
+                        <img className="project-page-project-img" src={'/assets/dailyui/Day2_Payment_Combined-01.png'} />
                     </div>
                 </ScrollTrigger>
                 <ScrollTrigger
@@ -131,7 +113,7 @@ export default class DailyUi extends React.Component {
                             displays <p className="project-page-keyword default-keyword">top 3</p> user-voted figures or
                             objects for a multitude of categories such as music, movies, and more.
                         </span>
-                        <img className="project-page-project-img" src={dayThreeImg} />
+                        <img className="project-page-project-img" src={'/assets/dailyui/Day3_LandingAlbum_Combined-01.png'} />
                     </div>
                 </ScrollTrigger>
                 <ScrollTrigger
@@ -148,7 +130,7 @@ export default class DailyUi extends React.Component {
                             <p className="project-page-keyword default-keyword">scientific calculator</p> but displayed
                             in a simple design.
                         </span>
-                        <img className="project-page-project-img" src={dayFourImg} />
+                        <img className="project-page-project-img" src={'/assets/dailyui/Day4_Calculator_Combined-01.png'} />
                     </div>
                 </ScrollTrigger>
                 <ScrollTrigger
@@ -163,7 +145,7 @@ export default class DailyUi extends React.Component {
                             conceptual Northwestern University Hub prototype. I focused on showing more clear and
                             effective visual cues for shuttle positions and stops.
                         </span>
-                        <img className="project-page-project-img" src={dayFiveImg} />
+                        <img className="project-page-project-img" src={'/assets/dailyui/Day5_Shuttle_Combined-01.png'} />
                     </div>
                 </ScrollTrigger>
                 <ScrollTrigger
@@ -178,7 +160,7 @@ export default class DailyUi extends React.Component {
                             could just quickly <p className="project-page-keyword default-keyword">scan</p> each other
                             business cards instead of keeping an archive of small-sized pieces of cardboard?
                         </span>
-                        <img className="project-page-project-img" src={daySixImg} />
+                        <img className="project-page-project-img" src={'/assets/dailyui/Day6_BusinessCard_Combined-01.png'} />
                     </div>
                 </ScrollTrigger>
                 <ScrollTrigger
@@ -194,7 +176,7 @@ export default class DailyUi extends React.Component {
                             <p className="project-page-keyword default-keyword">physical features</p> such as height and
                             hair color through their phone. Maybe I'll make use of this design in a few years.
                         </span>
-                        <img className="project-page-project-img" src={daySevenImg} />
+                        <img className="project-page-project-img" src={'/assets/dailyui/Day7_Settings_Combined-01.png'} />
                     </div>
                 </ScrollTrigger>
                 <ScrollTrigger
@@ -209,7 +191,7 @@ export default class DailyUi extends React.Component {
                             important to make error pages as well and carefully designed as home screens. Why not
                             attempt to make an unfortunate situation slightly better purely through design?
                         </span>
-                        <img className="project-page-project-img" src={dayEightImg} />
+                        <img className="project-page-project-img" src={'/assets/dailyui/Day8_404_Combined-01.png'} />
                     </div>
                 </ScrollTrigger>
                 <ScrollTrigger
@@ -232,7 +214,7 @@ export default class DailyUi extends React.Component {
                             </p>
                             .
                         </span>
-                        <img className="project-page-project-img" src={dayNineImg} />
+                        <img className="project-page-project-img" src={'/assets/dailyui/Day9_Habits_Combined-01.png'} />
                     </div>
                 </ScrollTrigger>
                 <ScrollTrigger
@@ -248,7 +230,7 @@ export default class DailyUi extends React.Component {
                             <p className="project-page-keyword default-keyword">drag interactions</p> and full-screen
                             design feedbacks.
                         </span>
-                        <img className="project-page-project-img" src={dayTenImg} />
+                        <img className="project-page-project-img" src={'/assets/dailyui/Day10_Share_Combined-01.png'} />
                     </div>
                 </ScrollTrigger>
                 <ScrollTrigger
@@ -263,7 +245,7 @@ export default class DailyUi extends React.Component {
                             one for a possible <p className="project-page-keyword default-keyword">dating</p>{' '}
                             application. Did this work ... or not?.
                         </span>
-                        <img className="project-page-project-img" src={dayElevenImg} />
+                        <img className="project-page-project-img" src={'/assets/dailyui/Day11_SuccessFail_Combined-01.png'} />
                     </div>
                 </ScrollTrigger>
                 <ScrollTrigger
@@ -279,7 +261,7 @@ export default class DailyUi extends React.Component {
                             important to facilitate the <p className="project-page-keyword default-keyword">browsing</p>{' '}
                             of different products.
                         </span>
-                        <img className="project-page-project-img" src={dayTwelveImg} />
+                        <img className="project-page-project-img" src={'/assets/dailyui/Day12_Shop_Combined-01.png'} />
                     </div>
                 </ScrollTrigger>
                 <ScrollTrigger
@@ -295,7 +277,7 @@ export default class DailyUi extends React.Component {
                             <p className="project-page-keyword default-keyword">content</p> as well as easily
                             differentiate the users in the group chat.
                         </span>
-                        <img className="project-page-project-img" src={dayThirteenImg} />
+                        <img className="project-page-project-img" src={'/assets/dailyui/Day13_DirectMessaging_Combined-01.png'} />
                     </div>
                 </ScrollTrigger>
                 <ScrollTrigger
@@ -310,7 +292,7 @@ export default class DailyUi extends React.Component {
                             application that displays a countdown to the end of the world. Hopefully, the information
                             displayed is incorrect.
                         </span>
-                        <img className="project-page-project-img" src={dayFourteenImg} />
+                        <img className="project-page-project-img" src={'/assets/dailyui/Day14_Countdown_Combined-01.png'} />
                     </div>
                 </ScrollTrigger>
                 <ScrollTrigger
@@ -325,7 +307,7 @@ export default class DailyUi extends React.Component {
                             <p className="project-page-keyword default-keyword">convenient</p> would it be to have an
                             application that regulates electricity being used in different rooms?
                         </span>
-                        <img className="project-page-project-img" src={dayFifteenImg} />
+                        <img className="project-page-project-img" src={'/assets/dailyui/Day15_Switch_Combined-01.png'} />
                     </div>
                 </ScrollTrigger>
                 <ScrollTrigger
@@ -341,7 +323,7 @@ export default class DailyUi extends React.Component {
                             interests are <p className="project-page-keyword default-keyword">physically near</p> to
                             each other.
                         </span>
-                        <img className="project-page-project-img" src={daySixteenImg} />
+                        <img className="project-page-project-img" src={'/assets/dailyui/Day16_Popup_Combined-01.png'} />
                     </div>
                 </ScrollTrigger>
                 <ScrollTrigger
@@ -354,7 +336,7 @@ export default class DailyUi extends React.Component {
                         <span className="project-page-project-text">
                             The goal of this challenge was to design an email receipt. I want the product listed below.
                         </span>
-                        <img className="project-page-project-img" src={daySeventeenImg} />
+                        <img className="project-page-project-img" src={'/assets/dailyui/Day17_EmailReceipt_Combined-01.png'} />
                     </div>
                 </ScrollTrigger>
             </div>

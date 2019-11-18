@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import './IntroPage.css';
 import { openLink } from '../Helpers';
 import CustomButton from './CustomButton';
-import { navigate } from 'hookrouter';
 
 const descriptions = [
     'Imagining and constructing interactive experiences.',
@@ -67,7 +66,7 @@ export default class IntroPage extends React.Component {
                             text={'Get started'}
                             inverted={true}
                             onClick={() => {
-                                navigate('/work');
+                                this.props.history.push('/work');
                             }}
                         />
                     ) : (

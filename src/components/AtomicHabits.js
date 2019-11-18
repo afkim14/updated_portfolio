@@ -3,8 +3,6 @@ import PropTypes from 'prop-types';
 import ScrollTrigger from 'react-scroll-trigger';
 import { openLink } from '../Helpers';
 import './AtomicHabits.css';
-import atomicHabitsImg from '../assets/dailyui/Day9_Habits_Combined-01.png';
-import qrImg from '../assets/AtomicHabits/habits_qr-01.png';
 
 import CustomButton from './CustomButton';
 
@@ -27,7 +25,7 @@ export default class AtomicHabits extends React.Component {
                             <p className="project-page-role">React Native</p>
                             <img
                                 className="project-page-project-img atomic-qr-img"
-                                src={qrImg}
+                                src={'/assets/AtomicHabits/habits_qr-01.png'}
                                 style={{ filter: this.props.imageColorHoverFilter }}
                             />
                             <CustomButton
@@ -144,7 +142,7 @@ export default class AtomicHabits extends React.Component {
                             gamification system where they can track how many days they were actively working on a
                             certain habit through a span of time.
                         </span>
-                        <img className="project-page-project-img" src={atomicHabitsImg} />
+                        <img className="project-page-project-img" src={'/assets/dailyui/Day9_Habits_Combined-01.png'} />
                     </div>
                 </ScrollTrigger>
                 <ScrollTrigger

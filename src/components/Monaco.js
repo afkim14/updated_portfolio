@@ -2,10 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import ScrollTrigger from 'react-scroll-trigger';
 import { openLink } from '../Helpers';
-import circleImg from '../assets/Monaco/circle.jpg';
-import connectivityImg from '../assets/Monaco/connectivity.jpg';
-import entranceImg from '../assets/Monaco/entrance.jpg';
-import lifeImg from '../assets/Monaco/life.jpg';
 
 import CustomButton from './CustomButton';
 
@@ -128,7 +124,7 @@ export default class Monaco extends React.Component {
                             whose approaches share a common interest in the effect, materiality, and experiences of the
                             screen in our digital world.
                         </span>
-                        <img className="project-page-project-img" src={entranceImg} />
+                        <img className="project-page-project-img" src={'/assets/Monaco/entrance.jpg'} />
                     </div>
                 </ScrollTrigger>
                 <ScrollTrigger
@@ -148,7 +144,7 @@ export default class Monaco extends React.Component {
                             pre-conceived notions of space and introduces a whole new genre of possibilities such as
                             disparate artworks placed in different countries that are connected by a central server.
                         </span>
-                        <img className="project-page-project-img" src={connectivityImg} />
+                        <img className="project-page-project-img" src={'/assets/Monaco/connectivity.jpg'} />
                     </div>
                 </ScrollTrigger>
                 <ScrollTrigger
@@ -167,7 +163,7 @@ export default class Monaco extends React.Component {
                             and separation and the transmission of digital information normally made invisible in our
                             daily lives.
                         </span>
-                        <img className="project-page-project-img" src={circleImg} />
+                        <img className="project-page-project-img" src={'/assets/Monaco/circle.jpg'} />
                     </div>
                 </ScrollTrigger>
                 <ScrollTrigger
@@ -184,7 +180,7 @@ export default class Monaco extends React.Component {
                             <p className="project-page-keyword default-keyword">kill</p> (red screen) at consistent
                             intervals.
                         </span>
-                        <img className="project-page-project-img" src={lifeImg} />
+                        <img className="project-page-project-img" src={'/assets/Monaco/life.jpg'} />
                     </div>
                 </ScrollTrigger>
             </div>

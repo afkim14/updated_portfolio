@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import './SideWorkPage.css';
 import { openLink } from '../Helpers';
 import CustomButton from './CustomButton';
-import { navigate } from 'hookrouter';
 
 const ANIMATION_STATES = {
     INTRO: 'INTRO',
@@ -39,7 +38,7 @@ export default class SideWorkPage extends React.Component {
     animateThenGoTo(link) {
         this.setState({ projectClicked: true });
         setTimeout(() => {
-            navigate(link);
+            this.props.history.push(link);
         }, 800);
     }
 
@@ -112,7 +111,7 @@ export default class SideWorkPage extends React.Component {
                                 className={'side-work-page-go-back-btn'}
                                 text={'Go back'}
                                 onClick={() => {
-                                    navigate('/work/skip')
+                                    this.props.history.push('/work/skip');
                                 }}
                             />
                             <CustomButton
@@ -120,7 +119,7 @@ export default class SideWorkPage extends React.Component {
                                 text={'Continue'}
                                 inverted={true}
                                 onClick={() => {
-                                    navigate('/about')
+                                    this.props.history.push('/about')
                                 }}
                             />
                         </div>

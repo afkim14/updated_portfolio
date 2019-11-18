@@ -2,8 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import ScrollTrigger from 'react-scroll-trigger';
 import { openLink } from '../Helpers';
-import shuttleImg from '../assets/dailyui/Day5_Shuttle_Combined-01.png';
-import employmentImg from '../assets/nuhub/PurpleWindow_Combined-01.png';
 
 import CustomButton from './CustomButton';
 
@@ -110,7 +108,7 @@ export default class NuHub extends React.Component {
                             if the student is not thinking about taking the shuttle, the application reminds that they
                             have such an option.
                         </span>
-                        <img className="project-page-project-img" src={shuttleImg} />
+                        <img className="project-page-project-img" src={'/assets/dailyui/Day5_Shuttle_Combined-01.png'} />
                     </div>
                 </ScrollTrigger>
                 <ScrollTrigger
@@ -150,7 +148,7 @@ export default class NuHub extends React.Component {
                             from previous student employees at job positions to better aid the user in finding a job
                             that would align the best with their interests and goals.
                         </span>
-                        <img className="project-page-project-img" src={employmentImg} />
+                        <img className="project-page-project-img" src={'/assets/nuhub/PurpleWindow_Combined-01.png'} />
                     </div>
                 </ScrollTrigger>
                 <ScrollTrigger

@@ -2,7 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import './Conclusion.css';
 import CustomButton from './CustomButton';
-import { navigate } from 'hookrouter';
 
 const wait = (ms) => {
     return new Promise((resolve) => setTimeout(resolve, ms));
@@ -31,7 +30,7 @@ export default class Conclusion extends React.Component {
                         text={'View static website'}
                         inverted={true}
                         onClick={() => {
-                            navigate('/static')
+                            this.props.history.push('/static');
                         }}
                     />
                 ) : (
