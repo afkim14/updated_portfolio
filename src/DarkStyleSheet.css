@@ -1,5 +1,5 @@
 html {
-    background-color: #302c3f;
+    background-color: #2a2736;
 }
 
 p,
@@ -22,7 +22,7 @@ span {
 }
 
 .default-accent-color {
-    color: #428e80;
+    color: #388d7d;
 }
 
 .default-border-color {
@@ -39,8 +39,14 @@ span {
     border-color: #232130;
 }
 
+.default-button-inverted-color {
+    color: #2a2736;
+    background: #0d8e78;
+    border-color: #0d8e78;
+}
+
 .default-button-color-active:hover {
-    color: #232130;
+    color: #2a2736;
     background: #388d7d;
     border-color: #388d7d;
 }
@@ -50,7 +56,7 @@ span {
 }
 
 .default-light-background {
-    background-color: #388d7d;
+    background-color: #428e80;
 }
 
 .default-dark-background {
@@ -58,18 +64,18 @@ span {
 }
 
 .default-back-background {
-    background-color: #302c3f;
+    background-color: #2a2736;
 }
 
 .default-back-background:hover {
-    background-color: #428e80;
+    background-color: #388d7d;
 }
 
 .default-back-background:hover p {
-    color: #302c3f;
+    color: #2a2736;
 }
 
 .default-keyword {
-    color: #302c3f;
+    color: #2a2736;
     background-color: #388d7d;
 }

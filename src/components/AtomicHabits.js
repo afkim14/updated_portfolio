@@ -76,7 +76,7 @@ export default class AtomicHabits extends React.Component {
                                         }}
                                     >
                                         EXPO
-                                    </p>{' '}
+                                    </p>
                                     .
                                 </span>
                             </li>

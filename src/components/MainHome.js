@@ -75,8 +75,8 @@ export default class MainHome extends React.Component {
                             imgHoverStyle={{ filter: this.props.imageColorHoverFilter }}
                             hovered={this.state.currentlyAtHover}
                             defaultHovered={true}
-                            description={'Software Engineer Intern'}
-                            header={'DEEPLOCAL'}
+                            description={'Software Engineer'}
+                            header={'Deeplocal'}
                             onHeaderHover={() => {
                                 this.changeHoverMessage(Messages.DEEPLOCAL);
                             }}
@@ -102,7 +102,7 @@ export default class MainHome extends React.Component {
                             imgStyle={{ filter: this.props.imageColorFilter }}
                             imgHoverStyle={{ filter: this.props.imageColorHoverFilter }}
                             description={'Software Engineer Artist'}
-                            header={'MONACO'}
+                            header={'Monaco'}
                             onHeaderHover={() => {
                                 this.setState({ previouslyAtHover: true, currentlyAtHover: false });
                                 this.changeHoverMessage(Messages.MONACO);
@@ -117,7 +117,7 @@ export default class MainHome extends React.Component {
                             imgStyle={{ filter: this.props.imageColorFilter }}
                             imgHoverStyle={{ filter: this.props.imageColorHoverFilter }}
                             description={'Software Engineer Intern'}
-                            header={'TAGGLE'}
+                            header={'Taggle'}
                             onHeaderHover={() => {
                                 this.setState({ previouslyAtHover: true, currentlyAtHover: false });
                                 this.changeHoverMessage(Messages.TAGGLE);
@@ -146,7 +146,7 @@ export default class MainHome extends React.Component {
                             imgStyle={{ filter: this.props.imageColorFilter }}
                             imgHoverStyle={{ filter: this.props.imageColorHoverFilter }}
                             description={'React, Firebase'}
-                            header={'CAPSULE'}
+                            header={'Capsule'}
                             onHeaderHover={() => {
                                 this.setState({ developedHover: true, currentlyAtHover: false });
                                 this.changeHoverMessage(Messages.CAPSULE);
@@ -161,7 +161,7 @@ export default class MainHome extends React.Component {
                             imgStyle={{ filter: this.props.imageColorFilter }}
                             imgHoverStyle={{ filter: this.props.imageColorHoverFilter }}
                             description={'React Native'}
-                            header={'ATOMIC HABITS'}
+                            header={'Atomic Habits'}
                             onHeaderHover={() => {
                                 this.setState({ developedHover: true, currentlyAtHover: false });
                                 this.changeHoverMessage(Messages.ATOMIC_HABITS);
@@ -171,6 +171,7 @@ export default class MainHome extends React.Component {
                                 this.animateThenGoTo('/atomichabits');
                             }}
                         />
+                        {/*
                         <ProjectContainer
                             img={nuHubImg}
                             imgStyle={{ filter: this.props.imageColorFilter }}
@@ -186,6 +187,7 @@ export default class MainHome extends React.Component {
                                 this.animateThenGoTo('/nuhub');
                             }}
                         />
+                        */}
                         <ProjectContainer
                             img={dailyUiImg}
                             imgStyle={{ filter: this.props.imageColorFilter }}
@@ -243,6 +245,7 @@ export default class MainHome extends React.Component {
                                 openLink('https://blog.prototypr.io/capsule-send-meaningful-messages-4126d53560d8');
                             }}
                         />
+                        {/*
                         <ProjectContainer
                             img={d3Img}
                             imgStyle={{ filter: this.props.imageColorFilter }}
@@ -258,6 +261,7 @@ export default class MainHome extends React.Component {
                                 openLink('https://packetlossvis.firebaseapp.com/');
                             }}
                         />
+                        */}
                     </div>
                 </div>
                 <div className="section-container contact-container">

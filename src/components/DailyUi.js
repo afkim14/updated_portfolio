@@ -71,7 +71,6 @@ export default class DailyUi extends React.Component {
                             </li>
                             <br />
                             <br />
-                            <br />
                         </ul>
                     </div>
                 </div>

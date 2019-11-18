@@ -1,16 +1,6 @@
-@font-face {
-    font-family: 'Kollektif';
-    src: url('/fonts/Kollektif.ttf');
-}
-
-@font-face {
-    font-family: 'KollektifBold';
-    src: url('/fonts/Kollektif-Bold.ttf');
-}
-
 body {
     margin: 0px;
-    font-family: 'Kollektif';
+    font-family: 'Source Code Pro', monospace;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
@@ -23,11 +13,13 @@ p,
 li,
 ul,
 span {
-    font-family: 'Kollektif';
+    font-family: 'Source Code Pro', monospace;
+    text-transform: uppercase;
 }
 
 button {
-    font-family: 'Kollektif';
+    font-family: 'Source Code Pro', monospace;
+    text-transform: uppercase;
 }
 
 .container-header {

@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import SideBar from './SideBar';
 import { leaveProjectAnimationDuration } from '../Helpers';
 import { navigate } from 'hookrouter';
+import { animateScroll as scroll } from 'react-scroll';
 import './ProjectPage.css';
 
 let thisRef;
@@ -20,6 +21,7 @@ export default class ProjectPage extends React.Component {
         this.updateCurrNavTitle = this.updateCurrNavTitle.bind(this);
         this.onViewportEnter = this.onViewportEnter.bind(this);
         thisRef = this;
+        scroll.scrollToTop();
     }
 
     componentDidMount() {
@@ -58,7 +60,7 @@ export default class ProjectPage extends React.Component {
                 <div
                     className="project-page-back-container default-back-background"
                     onMouseDown={() => {
-                        this.animateThenGoTo('/');
+                        this.animateThenGoTo(this.props.backURL);
                     }}
                 >
                     <p className="project-page-back-text">GO BACK</p>
@@ -82,4 +84,5 @@ window.onscroll = function() {
 ProjectPage.propTypes = {
     content: PropTypes.func,
     imageColorHoverFilter: PropTypes.string,
+    backURL: PropTypes.string
 };

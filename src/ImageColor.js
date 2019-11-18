@@ -282,4 +282,4 @@ class Solver {
     }
 }
 
-module.exports = { ImageColor, Solver };
+export { ImageColor, Solver };

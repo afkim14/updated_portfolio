@@ -1,0 +1,59 @@
+.conclusion-page-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.conclusion-page-intro {
+    font-size: 30px;
+    font-weight: bold;
+
+    opacity: 0;
+    animation: conclusion-fade-in 3s linear forwards;
+    -webkit-animation: conclusion-fade-in 3s linear forwards;
+}
+
+.conclusion-website-btn {
+    margin: 0px auto;
+    margin-top: 30px;
+    display: block;
+    cursor: pointer;
+    width: 180px;
+    height: 40px;
+    opacity: 0;
+
+    animation: conclusion-fade-in-from-bottom 0.5s linear forwards, up-down 2s infinite;
+    -webkit-animation: conclusion-fade-in-from-bottom 0.5s linear forwards, up-down 2s infinite;
+}
+
+.conclusion-website-btn-inactive {
+    margin: 0px auto;
+    margin-top: 30px;
+    display: block;
+    width: 180px;
+    height: 40px;
+    opacity: 0;
+}
+
+@keyframes conclusion-fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes conclusion-fade-in-from-bottom {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% { 
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}

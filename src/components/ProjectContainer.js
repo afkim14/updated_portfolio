@@ -21,7 +21,7 @@ export default class ProjectContainer extends React.Component {
                 />
                 <div className="project-info-container">
                     <p
-                        className={`project-header ${hovered && 'default-hovercolor'}`}
+                        className={`project-header ${hovered && 'default-hovercolor'} ${this.props.titleClassName}`}
                         onMouseEnter={() => {
                             this.setState({ hovered: true });
                             this.props.onHeaderHover();
@@ -36,7 +36,7 @@ export default class ProjectContainer extends React.Component {
                     >
                         {this.props.header}
                     </p>
-                    <p className={`project-description default-subcolor ${hovered && 'default-sub-hovercolor'}`}>
+                    <p className={`project-description default-subcolor ${hovered && 'default-sub-hovercolor'} ${this.props.descClassName}`}>
                         {this.props.description}
                     </p>
                 </div>
@@ -57,4 +57,7 @@ ProjectContainer.propTypes = {
     onHeaderHover: PropTypes.func,
     onHeaderLeave: PropTypes.func,
     onHeaderClick: PropTypes.func,
+
+    titleClassName: PropTypes.string,
+    descClassName: PropTypes.string
 };

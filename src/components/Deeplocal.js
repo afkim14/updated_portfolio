@@ -21,7 +21,10 @@ export default class Deeplocal extends React.Component {
                     >
                         <div className="project-page-title-container project-step">
                             <p className="project-page-header default-hovercolor">Deeplocal</p>
-                            <p className="project-page-role">Software Engineer Intern</p>
+                            <span className="project-page-role">
+                                Software Engineer <p className="project-page-keyword default-keyword">current</p>
+                            </span>
+                            <div style={{ clear: 'both' }} />
                             <CustomButton
                                 className={'project-page-website-btn'}
                                 text={'WEBSITE'}
@@ -36,7 +39,7 @@ export default class Deeplocal extends React.Component {
                         <ul className="project-page-keypoints-ul">
                             <li className="project-page-keypoints-li">
                                 <span>
-                                    Developed extensively with{' '}
+                                    Developing extensively with{' '}
                                     <p
                                         className="project-page-keyword default-keyword project-page-keyword-link"
                                         onMouseDown={() => {
@@ -68,7 +71,7 @@ export default class Deeplocal extends React.Component {
                             </li>
                             <li className="project-page-keypoints-li">
                                 <span>
-                                    Deployed and maintained multiple projects using{' '}
+                                    Deploying and maintaining multiple projects using{' '}
                                     <p
                                         className="project-page-keyword default-keyword project-page-keyword-link"
                                         onMouseDown={() => {
@@ -91,8 +94,8 @@ export default class Deeplocal extends React.Component {
                             </li>
                             <li className="project-page-keypoints-li">
                                 <span>
-                                    Met tight deadlines and created interactive experiences to more than{' '}
-                                    <p className="project-page-keyword default-keyword">10,000</p> people.
+                                    Creating interactive experiences and products to be seen and used by{' '}
+                                    <p className="project-page-keyword default-keyword">thousands</p> of people.
                                 </span>
                             </li>
                         </ul>

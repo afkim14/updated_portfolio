@@ -10,7 +10,7 @@ span {
 }
 
 .default-hovercolor {
-    color: #e85a4f;
+    color: #0d8e78;
 }
 
 .default-subcolor {
@@ -18,11 +18,11 @@ span {
 }
 
 .default-sub-hovercolor {
-    color: #e98074;
+    color: #0c967f;
 }
 
 .default-accent-color {
-    color: #e98074;
+    color: #0d8e78;
 }
 
 .default-border-color {
@@ -30,7 +30,7 @@ span {
 }
 
 .default-border-hovercolor {
-    border-color: #e98074;
+    border-color: #0c967f;
 }
 
 .default-button-color {
@@ -39,10 +39,16 @@ span {
     border-color: #d6d2c4;
 }
 
+.default-button-inverted-color {
+    color: #eae7dc;
+    background: #0d8e78;
+    border-color: #0d8e78;
+}
+
 .default-button-color-active:hover {
     color: #eae7dc;
-    background: #e85a4f;
-    border-color: #e85a4f;
+    background: #388d7d;
+    border-color: #388d7d;
 }
 
 .default-box-shadow {
@@ -50,7 +56,7 @@ span {
 }
 
 .default-light-background {
-    background-color: #e85a4f;
+    background-color: #0c967f;
 }
 
 .default-dark-background {
@@ -62,7 +68,7 @@ span {
 }
 
 .default-back-background:hover {
-    background-color: #e98074;
+    background-color: #0d8e78;
 }
 
 .default-back-background:hover p {
@@ -71,5 +77,5 @@ span {
 
 .default-keyword {
     color: #eae7dc;
-    background-color: #e85a4f;
+    background-color: #0d8e78;
 }

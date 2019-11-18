@@ -55,9 +55,6 @@ export default class NuHub extends React.Component {
                                     .
                                 </span>
                             </li>
-                            <br />
-                            <br />
-                            <br />
                         </ul>
                     </div>
                 </div>

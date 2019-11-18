@@ -1,0 +1,109 @@
+.intro-home-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.intro-home-name {
+    font-size: 30px;
+    animation: fade-in 0.5s linear forwards;
+    -webkit-animation: fade-in 0.5s linear forwards;
+    animation-delay: 1.0s;
+    -webkit-animation-delay: 1.0s;
+    opacity: 0;
+    margin: 0px;
+}
+
+.intro-home-job-title {
+    position: relative;
+    top: 5px;
+    animation: fade-in 0.5s linear forwards;
+    -webkit-animation: fade-in 0.5s linear forwards;
+    animation-delay: 1.5s;
+    -webkit-animation-delay: 1.5s;
+    opacity: 0;
+}
+
+.intro-home-company {
+    position: relative;
+    left: -3px;
+    cursor: pointer;
+
+    transition-property: transform;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-out;
+}
+
+.intro-home-company:hover {
+    transform: translateY(-2px);
+}
+
+.intro-home-desc {
+    width: 470px;
+    animation: fade-in 0.5s linear forwards, fadeinout 3s infinite;
+    -webkit-animation: fade-in 0.5s linear forwards, fadeinout 3s infinite;
+    animation-delay: 1.7s;
+    -webkit-animation-delay: 1.7s;
+    opacity: 0;
+}
+
+.intro-home-button {
+    margin-top: 20px;
+    width: 470px;
+    height: 50px;
+    opacity: 0;
+    cursor: pointer;
+
+    animation: slide-button-from-bottom 0.5s linear forwards, up-down 2s infinite;
+    -webkit-animation: slide-button-from-bottom 0.5s linear forwards, up-down 2s infinite;
+}
+
+.intro-home-button-inactive {
+    margin-top: 20px;
+    width: 470px;
+    height: 50px;
+    opacity: 0;
+}
+
+@media only screen and (max-width: 700px) {
+    .intro-home-desc {
+        width: 270px;
+    }
+
+    .intro-home-button {
+        width: 270px;
+    }
+
+    .intro-home-button-inactive {
+        width: 270px;
+    }
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeinout {
+    0% { opacity: 0; }
+    50% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+@keyframes slide-button-from-bottom {
+    0% {
+        transform: translateY(10px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}

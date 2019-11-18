@@ -2,13 +2,13 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import './CustomButton.css';
 
-function CustomButton({ className, text, style, onClick, onHover, onLeave, inactive }) {
+function CustomButton({ className, text, style, onClick, onHover, onLeave, inactive, inverted }) {
     return (
         <button
             className={`custom-button ${
                 inactive
-                    ? 'custom-button-inactive default-button-color'
-                    : 'custom-button-active default-button-color default-button-color-active'
+                    ? `custom-button-inactive ${inverted ? 'default-button-inverted-color' : 'default-button-color'}`
+                    : `${inverted ? 'default-button-inverted-color' : 'default-button-color custom-button-active'} default-button-color-active`
             } ${className}`}
             style={style}
             onClick={onClick}
@@ -24,10 +24,11 @@ CustomButton.propTypes = {
     className: PropTypes.string,
     text: PropTypes.string.isRequired,
     style: PropTypes.object,
-    onClick: PropTypes.func.isRequired,
+    onClick: PropTypes.func,
     onHover: PropTypes.func,
     onLeave: PropTypes.func,
     inactive: PropTypes.bool,
+    inverted: PropTypes.bool,
 };
 
 export default CustomButton;

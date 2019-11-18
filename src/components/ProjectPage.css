@@ -39,7 +39,7 @@
 }
 
 .project-page-header {
-    font-weight: bold;
+    font-family: 'KollektifBold';
     font-size: 60px;
     margin: 0px;
 }
@@ -74,6 +74,7 @@
     padding: 0px;
     margin-left: 20px;
     margin-bottom: 50px;
+    line-height: 30px;
 }
 
 .project-page-keypoints-li {
@@ -94,12 +95,10 @@
 }
 
 .project-page-keyword {
-    padding: 2px;
     padding-left: 8px;
     padding-right: 8px;
     display: inline-block;
     margin: 0px;
-    margin-top: 4px;
 }
 
 .project-page-keyword-link {
@@ -128,6 +127,7 @@
     display: block;
     position: relative;
     line-height: 25px;
+    font-size: 18px;
 }
 
 .project-page-project-img {
@@ -141,6 +141,7 @@
     display: block;
     position: relative;
     line-height: 30px;
+    font-size: 18px;
 }
 
 @keyframes enter-upwards {
@@ -209,5 +210,11 @@
     }
     100% {
         transform: translateY(0px);
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .project-page-container {
+        width: 80%;
     }
 }
