@@ -1,0 +1,252 @@
+.main-home-container {
+    padding: 20px;
+}
+
+.leave-home-animation {
+    animation: leave-upwards 0.8s ease forwards;
+}
+
+.profile-container {
+    width: 20%;
+    float: left;
+
+    opacity: 0;
+    animation: slide-from-left 1s ease forwards;
+}
+
+.profile-image-container {
+    height: 340px;
+}
+
+.profile-image {
+    width: 80%;
+    max-width: 200px;
+    display: block;
+    margin: 0px auto;
+    margin-top: 40px;
+}
+
+.section-container {
+    float: left;
+    margin: 0px 10px 0px 10px;
+}
+
+.sub-container {
+    position: relative;
+    margin-left: 10px;
+    margin-top: 30px;
+
+    transition: border-color 0.1s linear;
+    -webkit-transition: border-color 0.1s linear;
+}
+
+.work-container {
+    width: 24%;
+
+    opacity: 0;
+    animation: slide-from-left 1s ease forwards;
+    animation-delay: 0.5s;
+}
+
+.work-current-container {
+    min-height: 80px;
+    margin-bottom: 20px;
+}
+
+.work-previous-container {
+    min-height: 150px;
+}
+
+.projects-container {
+    width: 24%;
+
+    opacity: 0;
+    animation: slide-from-left 1s ease forwards;
+    animation-delay: 0.7s;
+}
+
+.projects-developed-container {
+    min-height: 330px;
+}
+
+.misc-container {
+    width: 25%;
+
+    opacity: 0;
+    animation: slide-from-left 1s ease forwards;
+    animation-delay: 0.9s;
+}
+
+.misc-projects-container {
+    min-height: 330px;
+}
+
+.contact-container {
+    width: 20%;
+
+    opacity: 0;
+    animation: slide-from-bottom 1s ease forwards;
+}
+
+.contact-sub-container {
+    height: 130px;
+    margin-top: 60px;
+}
+
+.contact-button-middle {
+    height: 20px;
+}
+
+.contact-button-left {
+    float: left;
+}
+
+.contact-button-right {
+    float: right;
+}
+
+.msg-container {
+    width: 76%;
+
+    opacity: 0;
+    animation: slide-from-bottom 1s ease forwards;
+    animation-delay: 0.9s;
+}
+
+.msg-sub-container {
+    height: 120px;
+    margin-top: 60px;
+    border: 10px solid #000000;
+}
+
+.hover-message {
+    font-size: 18px;
+    padding-left: 20px;
+    white-space: pre-wrap;
+}
+
+@keyframes move-up-down {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-4px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+@keyframes slide-from-left {
+    0% {
+        transform: translateX(-10px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes slide-from-bottom {
+    0% {
+        transform: translateY(10px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes leave-upwards {
+    0% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-500px);
+        opacity: 0;
+    }
+}
+
+@media only screen and (max-width: 1210px) {
+    .profile-image {
+        margin-top: 40px;
+        width: 160px;
+    }
+
+    .section-container {
+        width: 48%;
+        margin-top: 20px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .work-previous-container {
+        min-height: 0px;
+    }
+
+    .work-current-container {
+        min-height: 0px;
+    }
+
+    .projects-developed-container {
+        min-height: 0px;
+    }
+
+    .misc-container {
+        margin-bottom: 100px;
+    }
+
+    .misc-projects-container {
+        min-height: 0px;
+    }
+
+    .contact-container {
+        float: none;
+        display: block;
+        width: 98%;
+        clear: both;
+    }
+
+    .msg-container {
+        visibility: hidden;
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1160px) {
+    .profile-container {
+        float: none;
+        display: block;
+        width: 100%;
+        margin-top: 20px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .misc-container {
+        display: block;
+        float: none;
+        width: 100%;
+        clear: both;
+        margin-bottom: 0px;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    .section-container {
+        float: none;
+        display: block;
+        width: 100%;
+        margin-top: 20px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .msg-container {
+        visibility: hidden;
+        display: none;
+    }
+}

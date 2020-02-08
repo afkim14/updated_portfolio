@@ -1,145 +1,152 @@
 .main-home-container {
-    padding: 20px;
+    padding: 80px;
+    padding-top: 50px;
 }
 
-.leave-home-animation {
-    animation: leave-upwards 0.8s ease forwards;
+.main-home-header-container {
+    display: flex;
+    justify-content: space-between;
 }
 
-.profile-container {
-    width: 20%;
-    float: left;
+.main-home-name {
+    margin: 0px;
+}
 
+.main-home-social-container {
+    display: flex;
+    width: 150px;
+    justify-content: space-between;
+
+    opacity: 0;
+    animation: slide-from-right 1s ease forwards;
+}
+
+.main-home-social-icon {
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    transition: all .2s ease;
+}
+
+.main-home-social-icon:hover {
+    transform: scale(1.1);
+}
+
+.main-home-intro-container {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    text-align: center;
     opacity: 0;
     animation: slide-from-left 1s ease forwards;
 }
 
-.profile-image-container {
-    height: 340px;
+.main-home-intro-name {
+    font-size: 30px;
+    margin: 0px;
 }
 
-.profile-image {
-    width: 80%;
-    max-width: 200px;
-    display: block;
-    margin: 0px auto;
-    margin-top: 40px;
-}
-
-.section-container {
-    float: left;
-    margin: 0px 10px 0px 10px;
-}
-
-.sub-container {
+.main-home-intro-job-title {
     position: relative;
-    margin-left: 10px;
-    margin-top: 30px;
-
-    transition: border-color 0.1s linear;
-    -webkit-transition: border-color 0.1s linear;
+    top: 5px;
 }
 
-.work-container {
-    width: 24%;
+.main-home-intro-company {
+    position: relative;
+    left: -3px;
+    cursor: pointer;
 
+    transition-property: transform;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-out;
+}
+
+.main-home-intro-company:hover {
+    transform: translateY(-2px);
+}
+
+.main-home-projects-header {
+    font-size: 20px;
+    font-family: 'KollektifBold';
     opacity: 0;
     animation: slide-from-left 1s ease forwards;
-    animation-delay: 0.5s;
 }
 
-.work-current-container {
-    min-height: 80px;
-    margin-bottom: 20px;
+.main-home-projects-container {
+    display: grid;
+    grid-column-gap: 25px;
+    grid-row-gap: 25px;
+    grid-template-columns: 32% 32% 32%;
+    width: 100%;
+    margin: 0px auto;
+    margin-bottom: 100px;
 }
 
-.work-previous-container {
+.main-home-project-container {
     min-height: 150px;
-}
-
-.projects-container {
-    width: 24%;
-
-    opacity: 0;
-    animation: slide-from-left 1s ease forwards;
-    animation-delay: 0.7s;
-}
-
-.projects-developed-container {
-    min-height: 330px;
-}
-
-.misc-container {
-    width: 25%;
-
-    opacity: 0;
-    animation: slide-from-left 1s ease forwards;
-    animation-delay: 0.9s;
-}
-
-.misc-projects-container {
-    min-height: 330px;
-}
-
-.contact-container {
-    width: 20%;
-
+    border-radius: 5px;
+    box-shadow:  10px 10px 20px #c7c4bc, 
+             -10px -10px 20px #fffffe;
+    cursor: pointer;
+    transition: all .2s ease;
+    padding: 30px;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     opacity: 0;
     animation: slide-from-bottom 1s ease forwards;
 }
 
-.contact-sub-container {
-    height: 130px;
-    margin-top: 60px;
+.main-home-project-container:hover {
+    transform: translateY(-10px);
 }
 
-.contact-button-middle {
-    height: 20px;
+.main-home-project-name {
+    font-family: 'KollektifBold';
+    font-size: 20px;
 }
 
-.contact-button-left {
-    float: left;
+.main-home-side-project-color {
+    color: #F06235;
 }
 
-.contact-button-right {
-    float: right;
+.main-home-project-description {
+    line-height: 23px;
 }
 
-.msg-container {
-    width: 76%;
-
-    opacity: 0;
-    animation: slide-from-bottom 1s ease forwards;
-    animation-delay: 0.9s;
+.main-home-keyword {
+    display: inline-block;
+    margin: 0px;
 }
 
-.msg-sub-container {
-    height: 120px;
-    margin-top: 60px;
-    border: 10px solid #000000;
+.main-home-project-frameworks {
+    display: flex;
 }
 
-.hover-message {
-    font-size: 18px;
-    padding-left: 20px;
-    white-space: pre-wrap;
-}
-
-@keyframes move-up-down {
-    0% {
-        transform: translateY(0px);
-    }
-    50% {
-        transform: translateY(-4px);
-    }
-    100% {
-        transform: translateY(0px);
-    }
+.main-home-framework-text {
+    background-color: #b9b7ae;
+    color: #eae7dc;
+    padding: 5px;
+    padding-left: 7px;
+    padding-right: 7px;
+    border-radius: 8px;
+    margin-right: 10px;
 }
 
 @keyframes slide-from-left {
     0% {
         transform: translateX(-10px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes slide-from-right {
+    0% {
+        transform: translateX(10px);
         opacity: 0;
     }
     100% {
@@ -156,97 +163,5 @@
     100% {
         transform: translateY(0px);
         opacity: 1;
-    }
-}
-
-@keyframes leave-upwards {
-    0% {
-        transform: translateY(0px);
-        opacity: 1;
-    }
-    100% {
-        transform: translateY(-500px);
-        opacity: 0;
-    }
-}
-
-@media only screen and (max-width: 1210px) {
-    .profile-image {
-        margin-top: 40px;
-        width: 160px;
-    }
-
-    .section-container {
-        width: 48%;
-        margin-top: 20px;
-        margin-left: 10px;
-        margin-right: 10px;
-    }
-
-    .work-previous-container {
-        min-height: 0px;
-    }
-
-    .work-current-container {
-        min-height: 0px;
-    }
-
-    .projects-developed-container {
-        min-height: 0px;
-    }
-
-    .misc-container {
-        margin-bottom: 100px;
-    }
-
-    .misc-projects-container {
-        min-height: 0px;
-    }
-
-    .contact-container {
-        float: none;
-        display: block;
-        width: 98%;
-        clear: both;
-    }
-
-    .msg-container {
-        visibility: hidden;
-        display: none;
-    }
-}
-
-@media only screen and (max-width: 1160px) {
-    .profile-container {
-        float: none;
-        display: block;
-        width: 100%;
-        margin-top: 20px;
-        margin-left: 0px;
-        margin-right: 0px;
-    }
-
-    .misc-container {
-        display: block;
-        float: none;
-        width: 100%;
-        clear: both;
-        margin-bottom: 0px;
-    }
-}
-
-@media only screen and (max-width: 1100px) {
-    .section-container {
-        float: none;
-        display: block;
-        width: 100%;
-        margin-top: 20px;
-        margin-left: 0px;
-        margin-right: 0px;
-    }
-
-    .msg-container {
-        visibility: hidden;
-        display: none;
     }
 }

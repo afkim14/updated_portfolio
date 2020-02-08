@@ -21,14 +21,9 @@ import WorkPage from './components/WorkPage';
 import SideWorkPage from './components/SideWorkPage';
 import About from './components/About';
 import Conclusion from './components/Conclusion';
+import "./LightStyleSheet.css";
 
 const { ImageColor, Solver } = require('./ImageColor');
-
-if (new Date().getHours() < 18) {
-    import('./LightStyleSheet.css');
-} else {
-    import('./DarkStyleSheet.css');
-}
 
 const imageColorHex = '#8e8d8a';
 const imageColorHoverHex = new Date().getHours() < 18 ? '#0d8e78' : '#388d7d';
@@ -46,7 +41,7 @@ const imageHoverResult = imageHoverSolver.solve();
 const App = () => (
     <HashRouter basename={process.env.PUBLIC_URL}>
         <div>
-            <Route exact path="/" render={(props) => <IntroPage {...props} />}/>
+            {/* <Route exact path="/" render={(props) => <IntroPage {...props} />}/>
             <Route exact path="/skip" render={(props) => <IntroPage {...props} skipIntro={true} />} />
             <Route exact path="/work" render={(props) => <WorkPage {...props} />} />
             <Route exact path="/work/skip" render={(props) => <WorkPage {...props} skipIntro={true}  />} />
@@ -54,20 +49,20 @@ const App = () => (
             <Route exact path="/sidework/skip" render={(props) => <SideWorkPage {...props} imageColorFilter={imageResult.filter} imageColorHoverFilter={imageHoverResult.filter} skipIntro={true} />} />
             <Route exact path="/about" render={(props) => <About {...props} imageColorFilter={imageResult.filter} imageColorHoverFilter={imageHoverResult.filter} skipIntro={true} />} />
             <Route exact path="/about/skip" render={(props) => <About {...props} imageColorFilter={imageResult.filter} imageColorHoverFilter={imageHoverResult.filter} skipIntro={true} />} />
-            <Route exact path="/conclusion" render={(props) => <Conclusion {...props} />} />
+            <Route exact path="/conclusion" render={(props) => <Conclusion {...props} />} /> */}
 
-            <Route exact path="/static" render={(props) => <MainHome {...props} imageColorFilter={imageResult.filter} imageColorHoverFilter={imageHoverResult.filter} />} />
-            <Route exact path="/deeplocal" render={(props) => <ProjectPage {...props} content={Deeplocal} backURL={'/static'} />} />
-            <Route exact path="/deeplocal/work" render={(props) => <ProjectPage {...props} content={Deeplocal} backURL={'/work/skip'} />} />
-            <Route exact path="/monaco" render={(props) => <ProjectPage {...props} content={Monaco} backURL={'/static'} />} />
-            <Route exact path="/monaco/about" render={(props) => <ProjectPage {...props} content={Monaco} backURL={'/about/skip'} />} />
-            <Route exact path="/taggle" render={(props) => <ProjectPage {...props} content={Taggle} backURL={'/static'} />} />
-            <Route exact path="/capsule" render={(props) => <ProjectPage {...props} content={Capsule} backURL={'/static'} />} />
-            <Route exact path="/capsule/sidework" render={(props) => <ProjectPage {...props} content={Capsule} backURL={'/sidework/skip'} />} />
+            <Route exact path="/" render={(props) => <MainHome {...props} imageColorFilter={imageResult.filter} imageColorHoverFilter={imageHoverResult.filter} />} />
+            {/* <Route exact path="/deeplocal" render={(props) => <ProjectPage {...props} content={Deeplocal} backURL={'/'} />} /> */}
+            {/* <Route exact path="/deeplocal/work" render={(props) => <ProjectPage {...props} content={Deeplocal} backURL={'/work/skip'} />} /> */}
+            <Route exact path="/monaco" render={(props) => <ProjectPage {...props} content={Monaco} backURL={'/'} />} />
+            {/* <Route exact path="/monaco/about" render={(props) => <ProjectPage {...props} content={Monaco} backURL={'/about/skip'} />} /> */}
+            {/* <Route exact path="/taggle" render={(props) => <ProjectPage {...props} content={Taggle} backURL={'/static'} />} /> */}
+            <Route exact path="/capsule" render={(props) => <ProjectPage {...props} content={Capsule} backURL={'/'} />} />
+            {/* <Route exact path="/capsule/sidework" render={(props) => <ProjectPage {...props} content={Capsule} backURL={'/sidework/skip'} />} /> */}
             <Route exact path="/atomichabits" render={(props) => <ProjectPage {...props} content={AtomicHabits} imageColorHoverFilter={imageHoverResult.filter} backURL={'/static'} />} />
-            <Route exact path="/nuhub" render={(props) => <ProjectPage {...props} content={NuHub} backURL={'/static'} />} />
-            <Route exact path="/dailyui" render={(props) => <ProjectPage {...props} content={DailyUi} backURL={'/static'} />} />
-            <Route exact path="/dailyui/about" render={(props) => <ProjectPage {...props} content={DailyUi} backURL={'/about/skip'} />} />
+            {/* <Route exact path="/nuhub" render={(props) => <ProjectPage {...props} content={NuHub} backURL={'/static'} />} /> */}
+            <Route exact path="/dailyui" render={(props) => <ProjectPage {...props} content={DailyUi} backURL={'/'} />} />
+            {/* <Route exact path="/dailyui/about" render={(props) => <ProjectPage {...props} content={DailyUi} backURL={'/about/skip'} />} /> */}
         </div>
     </HashRouter>
   )

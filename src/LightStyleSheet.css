@@ -25,6 +25,10 @@ span {
     color: #0d8e78;
 }
 
+.default-inverted-color {
+    color: #eae7dc;
+}
+
 .default-border-color {
     border-color: #d6d2c4;
 }
